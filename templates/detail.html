@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>search for a book</title>
+  </head>
+  <body>
+    <h1>Listing for a book</h1>
+
+    <form action="/show" >
+        {% for a in auths %}
+        <div>
+         <label>Author: </label><br>
+            {{a}}
+        </div>
+        {% endfor %}
+        {% for b in books %}
+        <div>
+         <label>Book Name: </label><br>
+            {{b}}
+        </div>
+        {% endfor %}
+        <!-- <input type="submit" style="background-color:#477bff;color: white;" value="add" name="add"> -->
+        <!-- <input type="submit" style="background-color:#477bff;color: white;" value="search" name="search"> -->
+     </form>
+
+  </body>
+</html>

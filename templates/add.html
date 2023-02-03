@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>search for a book</title>
+  </head>
+  <body>
+    <h1>Adding a book</h1>
+
+    <form action="/add" method="POST">
+        <p>
+         <label>Author: </label><br>
+            <input type="text" size="30px" autocomplete="off" placeholder="author"  name="auth">
+           <br>
+        </p>
+        <p>
+         <label>Book Name: </label><br>
+            <input type="text" size="30px" autocomplete="off" placeholder="book name"  name="book">
+           <br>
+        </p>
+        <input type="submit" style="background-color:#477bff;color: white;" value="add" name="add">
+        <!-- <input type="submit" style="background-color:#477bff;color: white;" value="search" name="search"> -->
+     </form>
+
+  </body>
+</html>
