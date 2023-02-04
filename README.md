@@ -1,13 +1,20 @@
 # IDS721-Project1
-<h2>IDS_Project1</h2>
-<h3>Books Search System</h2>
-<h4>Intro</h4>
-I am going to write a AWS-based microservice that you can search for the books and add books.
-<h4>Set Up</h4>
-<h4>1.</h4>Create venv
+## SetUp
+1. Create venv
+'''terminal
 python3 -m venv env
 source env/bin/activate
-<h4>2.</h4>install requirements
+'''
+2. Install requirements
+'''python
 make install
-<h4>3.</h4>run
+'''
+3. run it
+'''python
 python app.py
+'''
+## Web
+my web link is: [app web](https://book-search.azurewebsites.net/ "web page")
+This project is going to write a AWS-based microservice that you can search for the books and add books.
+1. index page
+
