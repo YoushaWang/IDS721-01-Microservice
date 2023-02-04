@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request,session
 from flask import render_template
 
 app = Flask(__name__)
@@ -20,8 +20,10 @@ def add():
     if request.method=='POST':
         auth = request.form['auth']
         book = request.form['book']
+
         auths.append(auth)
         books.append(book)
+
         # return f'{i}'
         # redirect('show')
         return render_template("add.html",auths=auths,books=books)
@@ -46,9 +48,6 @@ def search():
 
 @app.route('/clear', methods=['GET'])
 def clear():
-    # global books, auths
-    books=[]
-    auths=[]
     return render_template("detail.html",auths=[],books=[])
 
 # books = [
