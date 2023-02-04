@@ -46,7 +46,7 @@ def search():
 
 @app.route('/clear', methods=['GET'])
 def clear():
-    global books, auths
+    # global books, auths
     books=[]
     auths=[]
     return render_template("detail.html",auths=[],books=[])
