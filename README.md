@@ -26,7 +26,7 @@ python app.py
 <img width="342" src="/img/azure.jpg">
 <img width="342" src="/img/log.jpg">
 ## Web
-my web link is: [app web](https://book-search.azurewebsites.net/ "web page")
+my web link is: [app web](https://book-search.azurewebsites.net/)
 1. index page
 <img width="342" src="/img/index_page.jpg">
 2. add page
