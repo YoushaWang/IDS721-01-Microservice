@@ -52,6 +52,7 @@ def clear():
     global books, auths
     books=[]
     auths=[]
+    return "I am an library search helper:)"
 
 # books = [
 #     {
