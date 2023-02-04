@@ -1,7 +1,5 @@
 from flask import Flask, request
-import requests
-from flask import jsonify
-from flask import render_template, redirect
+from flask import render_template
 
 app = Flask(__name__)
 auths=[]
@@ -22,7 +20,6 @@ def add():
     if request.method=='POST':
         auth = request.form['auth']
         book = request.form['book']
-        i=len(auth)
         auths.append(auth)
         books.append(book)
         # return f'{i}'
