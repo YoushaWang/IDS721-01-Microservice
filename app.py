@@ -47,6 +47,12 @@ def search():
         book=books[int(num)]
         return render_template("detail_spe.html",auths=auth,books=book)
 
+@app.route('/clear')
+def clear():
+    global books, auths
+    books=[]
+    auths=[]
+
 # books = [
 #     {
 #         "id": 1,
