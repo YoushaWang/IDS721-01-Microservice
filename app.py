@@ -16,7 +16,7 @@ def index():
 
 @app.route('/add', methods=['POST'])
 def add():
-    global books, auths
+    # global books, auths
     if request.method=='POST':
         auth = request.form['auth']
         book = request.form['book']
@@ -28,7 +28,7 @@ def add():
 
 @app.route('/show')
 def show():
-    global books, auths
+    # global books, auths
     return render_template("detail.html",auths=auths,books=books)
 
 @app.route('/search')
@@ -37,19 +37,19 @@ def searchindex():
 
 @app.route('/search', methods=['POST'])
 def search():
-    global books, auths
+    # global books, auths
     if request.method=='POST':
         num = request.form['num']
         auth=auths[int(num)]
         book=books[int(num)]
         return render_template("detail_spe.html",auths=auth,books=book)
 
-@app.route('/clear')
+@app.route('/clear', methods=['GET'])
 def clear():
     global books, auths
     books=[]
     auths=[]
-    return "I am an library search helper:)"
+    return render_template("detail.html",auths=[],books=[])
 
 # books = [
 #     {
