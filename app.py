@@ -45,7 +45,7 @@ def search():
         num = request.form['num']
         auth=auths[int(num)]
         book=books[int(num)]
-        return render_template("detail.html",auths=auth,books=book)
+        return render_template("detail_spe.html",auths=auth,books=book)
 
 # books = [
 #     {
