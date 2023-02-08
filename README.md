@@ -25,9 +25,15 @@ python app.py
 3. Azure App 
 <img width="342" src="/img/azure.jpg">
 <img width="342" src="/img/log.jpg">
-## Web
-my web link is: [app web](https://book-search.azurewebsites.net/) 
+4. AWS container
+![aws_container](https://user-images.githubusercontent.com/122926209/217411225-ce9c842a-ed25-4143-978e-0c83b40ed07b.jpg)
+5. AWS Elastic Container Registry
+![aws_EC](https://user-images.githubusercontent.com/122926209/217411406-fe15d12c-859d-4660-8e8e-4a995e1bc4a2.jpg)
 
+## Web
+my web link is: 
+in Azure(https://book-search.azurewebsites.net/) 
+in AWS App Runner: https://9ecvjbmkyb.us-east-1.awsapprunner.com/
 1. index page
 <img width="342" src="/img/index_page.jpg">
 2. add page
